@@ -35,9 +35,11 @@ const getShip = async (request, response) => {
   
   const updateShip = async (request, response) => {
     try {
-      const ship = await Ship.findByIdAndUpdate(request.params.id, request.body, {
-        new: true,
-      });
+      const ship = await Ship.findOneAndUpdate(
+        { _id: { $eq: request.params.id } }, 
+        request.body, 
+        { new: true }
+      );
       response.status(200).json(ship);
     } catch (error) {
       response.status(500).json(error);
