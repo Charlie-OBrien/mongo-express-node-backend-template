@@ -35,9 +35,11 @@ const getPeople = async (request, response) => {
   
   const updatePeople = async (request, response) => {
     try {
-      const people = await People.findByIdAndUpdate(request.params.id, request.body, {
-        new: true,
-      });
+      const people = await People.findOneAndUpdate(
+        { _id: { $eq: request.params.id } }, 
+        request.body, 
+        { new: true }
+      );
       response.status(200).json(people);
     } catch (error) {
       response.status(500).json(error);
