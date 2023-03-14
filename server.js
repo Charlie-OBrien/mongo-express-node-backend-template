@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const db = require("./app/models");
 
-  console.log("Conn string " + db.url);   //  <- for debug
+//  console.log("Conn string " + db.url);   //  <- for debug
 
 //  third party middlewares installed via npm
 app.use(morgan("common"));  //  logging to terminal
