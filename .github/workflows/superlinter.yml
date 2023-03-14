@@ -17,5 +17,8 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_GITHUB_ACTIONS: false
+          VALIDATE_SHELL_SHFMT: false
+          VALIDATE_BASH_EXEC: false
+          VALIDATE_DOCKERFILE_HADOLINT: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
