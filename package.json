@@ -1,35 +1,19 @@
 {
-	"name": "mongo-express-node-backend-template",
-	"version": "1.0.0",
-	"description": "Template backend app dockerized",
-	"main": "server.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint . --fix --max-warnings=0",
-		"format": "prettier . --write",
-		"prepare": "husky install"
-	},
-	"author": "Charles O'Brien",
-	"license": "ISC",
-	"dependencies": {
-		"dotenv": "10.0.0",
-		"express": "4.17.1",
-		"express-rate-limit": "6.7.0",
-		"helmet": "6.0.1",
-		"mongoose": "5.8.10",
-		"morgan": "1.10.0"
-	},
-	"devDependencies": {
-		"eslint": "8.36.0",
-		"eslint-config-airbnb-base": "15.0.0",
-		"eslint-config-prettier": "^8.7.0",
-		"eslint-plugin-import": "2.27.5",
-		"husky": "^8.0.3",
-		"lint-staged": "^13.2.0",
-		"prettier": "2.8.4"
-	},
-	"lint-staged": {
-		"*.js": "npm run lint",
-		"*.{js,css,html,json}": "npm run format"
-	}
+  "name": "mongo-express-node-backend-template",
+  "version": "1.0.0",
+  "description": "Template backend app dockerized",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles O'Brien",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "10.0.0",
+    "express": "4.17.1",
+    "express-rate-limit": "6.7.0",
+    "helmet": "6.0.1",
+    "mongoose": "5.8.10",
+    "morgan": "1.10.0"
+  }
 }
